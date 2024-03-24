@@ -1,0 +1,14 @@
+.db_sidebar_container {
+  max-width: 600px;
+  height: 100vh;
+  background: red;
+}
+
+.form-container {
+  text-align: left;
+}
+
+.login-container {
+  height: 100vh;
+  margin: 0 auto !important;
+}/*# sourceMappingURL=style.css.map */
