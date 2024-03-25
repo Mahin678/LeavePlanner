@@ -1,7 +1,18 @@
-.db_sidebar_container {
-  max-width: 600px;
+.dashboard_main_content {
   height: 100vh;
+}
+
+.dashboard_sidebar {
+  height: 100%;
   background: red;
+}
+
+.dashboard_top_content {
+  background-color: green;
+}
+
+.dashboard_top_item {
+  height: 140px;
 }
 
 .form-container {
