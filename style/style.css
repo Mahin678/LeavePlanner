@@ -4,15 +4,40 @@
 
 .dashboard_sidebar {
   height: 100%;
-  background: red;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.dashboard_sidebar a.nav-item {
+  color: #fff !important;
 }
 
 .dashboard_top_content {
-  background-color: green;
+  background-color: #00ccff;
 }
 
 .dashboard_top_item {
   height: 140px;
+}
+
+.dashboard_wrapper {
+  background: linear-gradient(44deg, rgba(0, 69, 66, 0.5), rgba(8, 83, 156, 0.5)), url("../assets/login-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.user_profile {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 55px 45px;
+}
+
+.dashboard_content {
+  -webkit-backdrop-filter: blur(52px);
+          backdrop-filter: blur(52px);
+  color: #fff;
+  padding: 24px 24px;
 }
 
 .form-container {
@@ -22,4 +47,19 @@
 .login-container {
   height: 100vh;
   margin: 0 auto !important;
+}
+
+.main-container {
+  background: linear-gradient(44deg, rgba(0, 69, 66, 0.5), rgba(8, 83, 156, 0.5)), url("../assets/login-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.login-form-container {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 55px 45px;
+  box-shadow: 0px 0px 19px 6px #00ccff;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */

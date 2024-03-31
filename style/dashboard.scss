@@ -3,12 +3,31 @@
 }
 .dashboard_sidebar {
     height: 100%;
-    background: red;
+    backdrop-filter: blur(5px);
+    // background: #00ccff;
+}
+.dashboard_sidebar  a.nav-item  {
+    color: #fff !important;
 }
 .dashboard_top_content {
-    background-color: green;
+    background-color: #00ccff;
 }
 
 .dashboard_top_item {
     height: 140px;
+}
+.dashboard_wrapper {
+    background: linear-gradient(44deg, rgba(0, 69, 66, 0.5), rgba(8, 83, 156, .5)), url('../assets/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.user_profile { 
+    backdrop-filter: blur(30px);
+    padding: 55px 45px;
+}
+.dashboard_content {
+    backdrop-filter: blur(52px);
+    color: #fff;
+    padding: 24px 24px;
 }

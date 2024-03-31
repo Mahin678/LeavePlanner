@@ -5,3 +5,16 @@
     height: 100vh;
     margin: 0 auto !important;
 }
+.main-container {
+    // background-image: url('../assets/login-bg.jpg');
+    background: linear-gradient(44deg, rgba(0, 69, 66, 0.5), rgba(8, 83, 156, .5)), url('../assets/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.login-form-container {
+    backdrop-filter: blur(30px);
+    padding: 55px 45px;
+    box-shadow:  0px 0px 19px 6px  #00ccff;
+    border-radius: 4px;
+}
