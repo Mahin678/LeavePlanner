@@ -1,3 +1,9 @@
+<?php 
+    $_GLOBAL['is_admin'] = false; 
+    session_start();
+    $_SESSION['test_session'] = "No need";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

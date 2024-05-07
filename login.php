@@ -26,14 +26,3 @@
         </div>
     </div>
 </div>  
-
-<?php 
-    if(isset($_POST['email']) && isset($_POST['password'])) {
-        // echo   filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        // echo   $_POST['password'];
-        if($_POST['email'] == 'mahin@gmail.com') {
-            $_GLOBAL['is_admin'] = true;
-            header('Location: dashboard.php');
-        }
-    } 
-?>

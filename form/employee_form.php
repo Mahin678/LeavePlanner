@@ -13,3 +13,27 @@
 <div class="mt-lg-3">
     Or <a href="#">Forget Password</a>
 </div>
+
+
+<?php 
+    if(isset($_POST['email']) && isset($_POST['password'])) {
+        if($_POST['email'] == 'mahin@gmail.com') {
+            $_SESSION['is_admin'] = true;
+            $_SESSION['name'] = "text size";
+            // header('Location: dashboard.php');
+        } else {
+            // designation
+            $_SESSION['is_admin'] = false;
+            $_SESSION['email']   =  'mahin@gmail.com';
+            $_SESSION['name']    =  'Shakib Al Hasan';
+            $_SESSION['emp_id']  =  '123';
+            $_SESSION['designation']  =  'Software Developer';
+            $_SESSION['sick_leave']  =  'Software Developer';
+            $_SESSION['pending_leave']  =  'Software Developer';
+            $_SESSION['casual_leave']  =  'Software Developer';
+
+
+            header('Location: dashboard.php');
+        }
+    } 
+?>
