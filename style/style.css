@@ -62,4 +62,13 @@
   padding: 55px 45px;
   box-shadow: 0px 0px 19px 6px #00ccff;
   border-radius: 4px;
+}
+.login-form-container .nav-link:not(.active) {
+  color: white !important;
+}
+
+.pending-leave-item {
+  border-bottom: 1px solid white;
+  margin: 10px 0px;
+  padding: 10px 0px;
 }/*# sourceMappingURL=style.css.map */

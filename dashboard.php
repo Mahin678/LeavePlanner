@@ -2,7 +2,7 @@
 <?php include './layout/header_meta.php'; ?>
     <body>
         <div class="dashboard_wrapper">
-            <div class="container">
+            <div class="container-xl">
                 <?php
 
                     // include './dashboard/dashboard_sidebar.php';
@@ -11,10 +11,10 @@
                 <div class="">
                     <?php include './dashboard/dashboard_header.php'; ?>
                     <div class="row dashboard_main_content mt-3">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <?php include './dashboard/dashboard_sidebar.php'; ?>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <div class="dashboard_content">
                                 <div class="tab-content" id="nav-tabContent">
                                     <div class="tab-pane fade show " id="applied-leave" role="tabpanel" aria-labelledby="nav-applied-leave-tab">
