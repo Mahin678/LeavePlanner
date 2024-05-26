@@ -1,5 +1,7 @@
 
-<?php include './layout/header_meta.php'; ?>
+<?php 
+    include './layout/header_meta.php';
+?>
     <body>
         <div class="dashboard_wrapper">
             <div class="container-xl">

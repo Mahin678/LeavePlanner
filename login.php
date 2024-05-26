@@ -1,3 +1,10 @@
+<?php 
+    include "./dashboard.php"
+
+    $db = new DatabaseTest();
+    // $query = "SELECT * FROM users";
+    // $read = $db->getUserData($query); 
+?>
 <div class="row login-container align-items-center container">
     <div class="col-lg-6">
         <h1 class="text-white">Welcome...</h1>
