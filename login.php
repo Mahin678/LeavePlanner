@@ -1,9 +1,12 @@
 <?php 
-    include "./dashboard.php"
+    // include "./dashboard.php";
+    include "./database.php";
 
     $db = new DatabaseTest();
-    // $query = "SELECT * FROM users";
-    // $read = $db->getUserData($query); 
+    $query = "SELECT * FROM users";
+    $read = $db->getUserData($query); 
+    print_r($read->fetch_assoc());
+    echo "working";
 ?>
 <div class="row login-container align-items-center container">
     <div class="col-lg-6">
@@ -32,4 +35,4 @@
             </div>
         </div>
     </div>
-</div>  
+</div>
