@@ -29,5 +29,13 @@
                 // return false;
             // }
         }
+        public function inNewEmployee($query) {
+            $result = $this->link->query($query) or die ($this->link->error.__LINE__);
+            if($result) {
+                return $result;   
+            } else {
+                    return false;
+            }
+        }
     } 
 ?>

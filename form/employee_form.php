@@ -33,7 +33,7 @@
             $_SESSION['casual_leave']  =  'Software Developer';
 
 
-            header('Location: dashboard.php');
+            // header('Location: dashboard.php');
         }
     } 
 ?>
