@@ -7,7 +7,7 @@
 <body>
     <div class="main-container">
         <?php 
-            $_Global['is_admin'] = true;
+            // $_Global['is_admin'] = false;
         ?>
         <?php include './login.php'; ?>
         <?php include './layout/footer.php'; ?>

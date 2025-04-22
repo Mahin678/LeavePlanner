@@ -1,13 +1,20 @@
 <div class="dashboard_sidebar">
     <nav class="d-flex align-items-center mb-lg-3">
         <div class="nav flex-column nav-pills me-3 w-100" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="true">Employee Leave List</a>
-            <a class="nav-item nav-link" id="nav-applied-leave-tab" data-toggle="tab" href="#applied-leave" role="tab" aria-controls="applied-leave" aria-selected="true">Application List</a>
-            <!-- <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Leave Application</a> -->
-            <!-- <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Pending Leaves</a> -->
-            <!-- <a class="nav-item nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-history" role="tab" aria-controls="nav-history" aria-selected="false">Leave History</a> -->
-            <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Update Profile</a> -->
-            <!-- <a class="nav-item nav-link" id="nav-appeal-tab" data-toggle="tab" href="#nav-appeal" role="tab" aria-controls="nav-appeal" aria-selected="false">Appeal or Edit</a> -->
+            <?php
+                if($admin) { ?>
+                    <a class="nav-item nav-link active" id="leave-list-tab" data-toggle="tab" href="#leave-list" role="tab" aria-controls="leave-list" aria-selected="true">Leave List</a>
+                    <a class="nav-item nav-link" id="appeal-list-tab" data-toggle="tab" href="#appeal-list" role="tab" aria-controls="appal-list" aria-selected="true">Appeal List</a>
+                    <a class="nav-item nav-link" id="nav-employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="true">Total Leave by employee</a>
+                    <?php
+                } else { ?>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#new-application" role="tab" aria-controls="new-application" aria-selected="true">New Leave Application</a>
+                    <a class="nav-item nav-link" id="pending-leave-tab" data-toggle="tab" href="#pending-leave" role="tab" aria-controls="pending-leave" aria-selected="false">Pending Leaves</a>
+                    <a class="nav-item nav-link" id="leave-history-tab" data-toggle="tab" href="#leave-history" role="tab" aria-controls="leave-history" aria-selected="false">Leave History</a>        
+                    <a class="nav-item nav-link" id="appeal-tab" data-toggle="tab" href="#appeal" role="tab" aria-controls="appeal" aria-selected="false">Appeal or Edit</a>
+                <?php }
+            ?>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Update Profile</a>
         </div>
     </nav>
 </div>
