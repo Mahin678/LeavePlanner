@@ -1,9 +1,8 @@
 <div class="py-3 px-3 text-white user_profile text-center">
-    
     <h4>
-        <?php  echo $_SESSION["name"]; ?>
+        <?php  echo $name; ?>
     </h4>
-    <div><?php  echo $_SESSION["designation"]; ?></div>
+    <div><?php  echo $designation; ?></div>
     <a href="/LeavePlanner/">Home </a>
 </div>
 <div class="d-flex justify-content-between dashboard_top_content align-items-center">

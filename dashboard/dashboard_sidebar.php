@@ -8,9 +8,8 @@
                     <a class="nav-item nav-link" id="nav-employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="true">Total Leave by employee</a>
                     <?php
                 } else { ?>
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#new-application" role="tab" aria-controls="new-application" aria-selected="true">New Leave Application</a>
-                    <a class="nav-item nav-link" id="pending-leave-tab" data-toggle="tab" href="#pending-leave" role="tab" aria-controls="pending-leave" aria-selected="false">Pending Leaves</a>
-                    <a class="nav-item nav-link" id="leave-history-tab" data-toggle="tab" href="#leave-history" role="tab" aria-controls="leave-history" aria-selected="false">Leave History</a>        
+                    <a class="nav-item nav-link active" id="new-application-tab" data-toggle="tab" href="#new-application" role="tab" aria-controls="new-application" aria-selected="true">New Leave Application</a>
+                    <a class="nav-item nav-link" id="leave-history-tab" data-toggle="tab" href="#leave-history" role="tab" aria-controls="leave-history" aria-selected="false">Leave History</a>
                     <a class="nav-item nav-link" id="appeal-tab" data-toggle="tab" href="#appeal" role="tab" aria-controls="appeal" aria-selected="false">Appeal or Edit</a>
                 <?php }
             ?>
