@@ -22,10 +22,15 @@
                                 <div class="tab-content" id="nav-tabContent">
                                     <?php 
                                         if($admin) { ?>
-                                                <div class="tab-pane fade" id="employee-leave" role="tabpanel" aria-labelledby="nav-employee-leave-tab">
+                                                <div class="tab-pane fade show active" id="leave-list" role="tabpanel" aria-labelledby="leave-list-tab">
                                                     <?php include './dashboard/admin/employee_leave_list.php'; ?>
                                                 </div>
-
+                                                <div class="tab-pane fade" id="appeal-list" role="tabpanel" aria-labelledby="appeal-list-tab">
+                                                    Appeal List
+                                                </div>
+                                                <div class="tab-pane fade" id="employee-leave" role="tabpanel" aria-labelledby="employee-leave-tab">
+                                                    Total Leave by employee
+                                                </div>
                                             <?php 
                                         } else { ?>
                                                 <div class="tab-pane fade show active" id="new-application" role="tabpanel" aria-labelledby="new-application-tab">

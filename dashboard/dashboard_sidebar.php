@@ -4,8 +4,8 @@
             <?php
                 if($admin) { ?>
                     <a class="nav-item nav-link active" id="leave-list-tab" data-toggle="tab" href="#leave-list" role="tab" aria-controls="leave-list" aria-selected="true">Leave List</a>
-                    <a class="nav-item nav-link" id="appeal-list-tab" data-toggle="tab" href="#appeal-list" role="tab" aria-controls="appal-list" aria-selected="true">Appeal List</a>
-                    <a class="nav-item nav-link" id="nav-employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="true">Total Leave by employee</a>
+                    <a class="nav-item nav-link" id="appeal-list-tab" data-toggle="tab" href="#appeal-list" role="tab" aria-controls="appeal-list" aria-selected="false">Appeal List</a>
+                    <a class="nav-item nav-link" id="employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="false">Total Leave by employee</a>
                     <?php
                 } else { ?>
                     <a class="nav-item nav-link active" id="new-application-tab" data-toggle="tab" href="#new-application" role="tab" aria-controls="new-application" aria-selected="true">New Leave Application</a>

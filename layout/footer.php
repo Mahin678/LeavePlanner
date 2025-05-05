@@ -1,1 +1,1 @@
-<h1>Hello Footer</h1>
+<!-- <h1>Hello Footer</h1> -->
