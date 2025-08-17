@@ -3,9 +3,8 @@
         <div class="nav flex-column nav-pills me-3 w-100" id="nav-tab" role="tablist">
             <?php
                 if($admin) { ?>
-                    <a class="nav-item nav-link active" id="leave-list-tab" data-toggle="tab" href="#leave-list" role="tab" aria-controls="leave-list" aria-selected="true">Leave List</a>
-                    <a class="nav-item nav-link" id="appeal-list-tab" data-toggle="tab" href="#appeal-list" role="tab" aria-controls="appeal-list" aria-selected="false">Appeal List</a>
-                    <a class="nav-item nav-link" id="employee-leave-tab" data-toggle="tab" href="#employee-leave" role="tab" aria-controls="employee-leave" aria-selected="false">Total Leave by employee</a>
+                    <a class="nav-item nav-link <?php echo isset($_GET['action']) && $_GET['action'] != 0 ? '' : 'active'; ?>" id="leave-list-tab" data-toggle="tab" href="#leave-list" role="tab" aria-controls="leave-list" aria-selected="true">Total Leave List</a>
+                    <a class="nav-item nav-link <?php echo isset($_GET['action']) && $_GET['action'] != 0 ? 'active' : ''; ?>" id="appeal-list-tab" data-toggle="tab" href="#appeal-list" role="tab" aria-controls="appeal-list" aria-selected="false">New Appeal List</a>
                     <?php
                 } else { ?>
                     <a class="nav-item nav-link active" id="new-application-tab" data-toggle="tab" href="#new-application" role="tab" aria-controls="new-application" aria-selected="true">New Leave Application</a>

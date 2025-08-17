@@ -1,9 +1,9 @@
 <?php 
     include "./form/auth_config.php";
-    // include "./dashboard.php";
-    include "./database.php";
+
 
     // $db = new DatabaseTest();
+
     // $query = "SELECT * FROM users";
     // $read = $db->getUserData($query); 
     // print_r($read->fetch_assoc());

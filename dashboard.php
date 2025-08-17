@@ -2,6 +2,7 @@
 <?php 
     include './layout/header_meta.php';
     include './data.php';
+    include './dashboard/dynamic_dashboard.php';
 ?>
     <body>
         <div class="dashboard_wrapper">
@@ -21,15 +22,20 @@
                             <div class="dashboard_content">
                                 <div class="tab-content" id="nav-tabContent">
                                     <?php 
-                                        if($admin) { ?>
-                                                <div class="tab-pane fade show active" id="leave-list" role="tabpanel" aria-labelledby="leave-list-tab">
+                                        if($admin) { 
+                                            ?>
+                                                <div class="tab-pane fade show <?php echo isset($_GET['action']) &&  $_GET['action'] != 0 ? '' : 'active'; ?>" id="leave-list" role="tabpanel" aria-labelledby="leave-list-tab">
                                                     <?php include './dashboard/admin/employee_leave_list.php'; ?>
                                                 </div>
-                                                <div class="tab-pane fade" id="appeal-list" role="tabpanel" aria-labelledby="appeal-list-tab">
-                                                    Appeal List
-                                                </div>
-                                                <div class="tab-pane fade" id="employee-leave" role="tabpanel" aria-labelledby="employee-leave-tab">
-                                                    Total Leave by employee
+                                                <div class="tab-pane fade  <?php echo isset($_GET['action']) && $_GET['action'] != 0 ? 'show active' : ''; ?>" id="appeal-list" role="tabpanel" aria-labelledby="appeal-list-tab">
+                                                    <?php 
+                                                        if (isset($_GET['action']) && $_GET['action'] != 0) {
+                                                            include './dashboard/admin/message_form.php';
+
+                                                        } else {
+                                                            include './dashboard/admin/applied_leave_list.php'; 
+                                                        }
+                                                    ?>
                                                 </div>
                                             <?php 
                                         } else { ?>

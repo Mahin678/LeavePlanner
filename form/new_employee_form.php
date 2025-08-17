@@ -25,5 +25,6 @@
         <label class="text-light" for="em_confirm_pass" >Retype Password</label>
         <input type="password" name="em_confirm_pass" class="form-control">
     </div>
-    <input name="type" value="new" type="submit" class="btn btn-primary"/>
+    <input name="type" value="new" class="btn btn-primary" type="hidden"/>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>

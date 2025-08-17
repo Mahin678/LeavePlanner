@@ -1,4 +1,7 @@
-<a href="dashboard.php" class="btn btn-info">Main Menu</a>
+<div class="text-center">
+    <a href="dashboard.php?action=0" class="btn btn-info test-center mb-5">Main list</a>
+</div>
+
 <div class="pending-leave-container">
     <div class="pending-leave-header row ">
         <div class="col-lg-2"> Employee Name  </div>

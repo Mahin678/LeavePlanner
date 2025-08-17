@@ -2,7 +2,7 @@
     <h4>
         <?php  echo $name; ?>
     </h4>
-    <div><?php  echo $designation; ?></div>
+    <div><?php  echo $position; ?></div>
     <a href="/LeavePlanner/">Home </a>
 </div>
 <div class="d-flex justify-content-between dashboard_top_content align-items-center">
